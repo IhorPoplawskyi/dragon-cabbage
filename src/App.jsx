@@ -1,13 +1,19 @@
-import './App.css'
-import { MainPage } from './Pages/MainPage/MainPage'
+import { Route, Routes } from "react-router-dom";
+import { AppWrapper } from "./App.styled";
+import { ROUTES } from "./routes";
 
-function App() {
-
+export const App = () => {
   return (
-    <>
-      <MainPage />
-    </>
-  )
-}
-
-export default App
+    <AppWrapper>
+      <Routes>
+        {ROUTES.map(({ layout, routes }, index) => (
+          <Route key={index} element={layout}>
+            {routes.map(({ element, path, name }) => (
+              <Route key={name} element={element} path={path} />
+            ))}
+          </Route>
+        ))}
+      </Routes>
+    </AppWrapper>
+  );
+};
