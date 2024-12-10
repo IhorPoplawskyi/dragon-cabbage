@@ -1,11 +1,13 @@
 export const theme = {
   main: "#fff",
   secondary: "#3F4851",
+  footer: "rgb(0, 0, 0, 0.6)",
 
   // NAVIGATION COLORS
   navActive: "#BAB9C1",
   navActivePoint: "#2A7FD9",
   navBgDM: "#172736",
+
 
   // NAVIGATION COLORS
 

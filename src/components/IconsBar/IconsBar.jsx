@@ -1,19 +1,25 @@
-import gmail from "./gmail.png";
-import viber from "./viber.png";
-import telegram from "./telegram.png";
-import whatsapp from "./whatsapp.png";
+import { FaTelegramPlane } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { RiWhatsappFill } from "react-icons/ri";
+import { SiViber } from "react-icons/si";
 
 import style from "./IconsBar.module.css";
-
-import { IconsBarItem } from "../IconsBarItem/IconsBarItem";
 
 export const IconsBar = () => {
   return (
     <div className={style.IconsBarWrapper}>
-      <IconsBarItem image={gmail} link=''/>
-      <IconsBarItem image={viber} link=''/>
-      <IconsBarItem image={telegram} link=''/>
-      <IconsBarItem image={whatsapp} link=''/>
+      <a className={style.item} target="_blank" href="">
+        <FaTelegramPlane />
+      </a>
+      <a className={style.item} target="_blank" href="">
+        <IoMail />
+      </a>
+      <a className={style.item} target="_blank" href="">
+        <SiViber />
+      </a>
+      <a className={style.item} target="_blank" href="">
+        <RiWhatsappFill />
+      </a>
     </div>
   );
 };

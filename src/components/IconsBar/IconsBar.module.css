@@ -1,8 +1,18 @@
 .IconsBarWrapper {
   width: 250px;
-  position: absolute;
-  top: 25px;
-  left: 25px;
   display: flex;
   justify-content: space-around;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:hover {
+  border-radius: 100%;
+  background-color: black;
 }
