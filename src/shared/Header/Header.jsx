@@ -13,6 +13,9 @@ export const Header = () => {
           <li>
             <NavLink to={pathOfRoutes.ABOUT_US_ROUTE}>About Us</NavLink>
           </li>
+          <li>
+            <NavLink to={pathOfRoutes.VACANCIES_ROUTE}>Vacancies</NavLink>
+          </li>
         </ul>
       </nav>
     </HeaderWrapper>
